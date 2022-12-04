@@ -44,7 +44,7 @@ body{
     transition: height .4s ease-in;
 }
 .container.active{
-    height: 85rem;
+    height: 75rem;
     
 }
 
