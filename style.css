@@ -30,20 +30,21 @@ body{
     align-items: center;
     background-image: url(https://images.unsplash.com/photo-1493246507139-91e8fad9978e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2700&q=80);
     background-size: cover;
+    background-position: center;
 }
 
 .container{
     position: relative;
-    width: 35rem;
-    height: 12rem;
+    width: 70rem;
+    height: 32rem;
     background-color:transparent;
     padding: 2rem;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    box-shadow: 0 4px 7px rgba(0,0,0,0.2);
     overflow: hidden;
     transition: height .4s ease-in;
 }
 .container.active{
-    height: 35rem;
+    height: 55rem;
     
 }
 
@@ -52,7 +53,30 @@ body{
     display: flex;
     align-items: center;
 }
+.card-main{
 
+    position: relative;
+    display: flex;
+    align-items: center;
+    
+
+}
+.card-main h3{
+    position: relative;
+    font-size: 2.2rem;
+    margin-left: 1.5rem;
+    color: #110e0e;
+    letter-spacing: 1px;
+    font-weight: 300;
+    transition: all .4s ease-in;
+}
+.card-main p {
+    position: relative;
+    font-size: 1.6rem;
+    margin-left: 1.5rem;
+    color: #f8f4f4;
+    letter-spacing: 2px;
+}
 .card-img img{
     width: 70px;
     border-radius: 50%;
@@ -65,13 +89,13 @@ body{
 .card h2{
     font-size: 2.2rem;
     margin-left: 1.5rem;
-    color: #ffffff;
+    color: #200f0f;
     letter-spacing: 2px;
 }
 .card h2 span{
     font-size: 1.6rem;
     font-weight: 400;
-    color: #e8e9eb;
+    color: #110101;
     letter-spacing: 0px;
 }
 
@@ -87,7 +111,7 @@ body{
 }
 .container ul a{
     font-size: 1.8rem;
-    color: #f9fdfd;
+    color: #0d1414;
     transition: 0.2s;
 }
 .fa{
