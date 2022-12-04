@@ -31,41 +31,46 @@ body{
     background-image: url(https://images.unsplash.com/photo-1493246507139-91e8fad9978e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2700&q=80);
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+    
 }
 
 .container{
     position: relative;
     width: 38.5rem;
     height: 10.2rem;
-    background-color:transparent;
+    background-color: #00000056;
     padding: 2rem;
-    box-shadow: 0 4px 7px rgba(0,0,0,0.2);
+    box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.3);
     overflow: hidden;
     transition: height .4s ease-in;
 }
 .container.active{
     height: 72rem;
-    
 }
 
 .card{
     position: relative;
     display: flex;
     align-items: center;
+    
 }
+
 .card-main{
 
     position: relative;
     display: flex;
     align-items: center;
-    
+    justify-content: space-between;
 
 }
 .card-main h3{
     position: relative;
     font-size: 2.2rem;
     margin-left: 1.5rem;
-    color: #110e0e;
+    color: #689ec5af;
     letter-spacing: 1px;
     font-weight: 300;
     transition: all .4s ease-in;
@@ -74,7 +79,7 @@ body{
     position: relative;
     font-size: 1.6rem;
     margin-left: 1.5rem;
-    color: #161414;
+    color: #08ffc9ad;
     letter-spacing: 2px;
 }
 .card-img img{
@@ -87,24 +92,28 @@ body{
 }
 
 .card h2{
+
     font-size: 2.2rem;
     margin-left: 1.5rem;
-    color: #200f0f;
+    color: #0f3653;
     letter-spacing: 2px;
 }
 .card h2 span{
     font-size: 1.6rem;
     font-weight: 400;
-    color: #110101;
+    color: rgba(207, 196, 196, 0.89);
     letter-spacing: 0px;
 }
+
+
+
 
 .container ul {
     position: relative;
     border-top: 1px solid transparent;
     margin-top: 1.5rem;
     padding: 2rem 0;
-
+    
     display: flex;
     flex-direction: column;
     gap: 2rem;
@@ -130,7 +139,7 @@ body{
     right: 0;
     width: 4rem;
     height: 4rem;
-    color: #023047;
+    color: #023047d0;
     display: flex;
     justify-content: center;
     align-items: center;
