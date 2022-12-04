@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400&display=swap');
+
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%; /* 1rem = 10px */
+}
+
+ul{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    font-family: 'Source Sans Pro', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(https://images.unsplash.com/photo-1493246507139-91e8fad9978e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2700&q=80);
+    background-size: cover;
+}
+
+.container{
+    position: relative;
+    width: 35rem;
+    height: 12rem;
+    background-color:transparent;
+    padding: 2rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    overflow: hidden;
+    transition: height .4s ease-in;
+}
+.container.active{
+    height: 35rem;
+    
+}
+
+.card{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.card-img img{
+    width: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+    
+
+
+}
+
+.card h2{
+    font-size: 2.2rem;
+    margin-left: 1.5rem;
+    color: #ffffff;
+    letter-spacing: 2px;
+}
+.card h2 span{
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: #e8e9eb;
+    letter-spacing: 0px;
+}
+
+.container ul {
+    position: relative;
+    border-top: 1px solid transparent;
+    margin-top: 1.5rem;
+    padding: 2rem 0;
+
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.container ul a{
+    font-size: 1.8rem;
+    color: #f9fdfd;
+    transition: 0.2s;
+}
+.fa{
+    font-size: 2rem;
+    margin-right: 1rem;
+
+}
+.container ul a:hover{
+    color: #219EBC;
+   
+}
+
+.toggle{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 4rem;
+    height: 4rem;
+    color: #023047;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.toggle > .fa{
+    margin: auto;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.25s;
+   font-size: 1.8rem;
+}
+
+.container.active .toggle > .fa{
+    transform: rotate(-540deg);
+}
