@@ -35,8 +35,8 @@ body{
 
 .container{
     position: relative;
-    width: 70rem;
-    height: 32rem;
+    width: 37rem;
+    height: 12.5rem;
     background-color:transparent;
     padding: 2rem;
     box-shadow: 0 4px 7px rgba(0,0,0,0.2);
@@ -44,7 +44,7 @@ body{
     transition: height .4s ease-in;
 }
 .container.active{
-    height: 50rem;
+    height: 80rem;
     
 }
 
